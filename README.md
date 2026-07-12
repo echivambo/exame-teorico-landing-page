@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Exame Teórico Moçambique 2026 - Landing Page
 
-## Getting Started
+Esta é a landing page oficial, moderna e altamente otimizada do aplicativo Android **Exame Teórico Moçambique 2026**.
 
-First, run the development server:
+O projeto foi construído utilizando **Next.js 15**, **React 19**, **TypeScript**, **Tailwind CSS v4** e **Framer Motion** para animações interativas e fluidas.
+
+---
+
+## 🚀 Como Executar Localmente
+
+### Pré-requisitos
+* Node.js (v18.17 ou superior, recomendado v20+)
+* npm (instalado nativamente com Node.js)
+
+### Passos
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+2. Execute o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+3. Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+
+---
+
+## 🛠️ Build de Produção Local
+
+Para compilar e validar a aplicação localmente no modo de produção:
+
+1. Gere a compilação standalone otimizada:
+   ```bash
+   npm run build
+   ```
+
+2. Inicialize o servidor de produção:
+   ```bash
+   npm run start
+   ```
+
+---
+
+## 🐳 Deploy na VPS com Docker Compose & Traefik
+
+A aplicação está configurada para deploy simplificado em produção usando **Docker Compose** atrás de um proxy reverso **Traefik** com HTTPS automático via Let's Encrypt.
+
+### Requisitos no Servidor (VPS)
+* Docker e Docker Compose instalados.
+* Um serviço Traefik ativo escutando na rede Docker externa chamada `traefik_public`.
+* Apontamentos DNS (tipo A) para o seu domínio (ex: `exameteorico.co.mz` e `www.exameteorico.co.mz`) direcionados para o IP da VPS.
+
+### Configuração Inicial
+1. Abra o arquivo [docker-compose.yml](file:///./docker-compose.yml) e substitua `exameteorico.co.mz` e `www.exameteorico.co.mz` pelo seu domínio real.
+2. Certifique-se de que o certificado SSL resolver do Traefik se chama `letsencrypt` (ou edite o campo `tls.certresolver` no compose caso utilize outro nome).
+
+### Comandos de Deploy
+Execute na pasta raiz do projeto na sua VPS:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Iniciar a compilação e subir o container em segundo plano
+docker compose up -d --build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O Docker compilará a aplicação de forma segura através do multi-stage `Dockerfile` (standalone), copiando apenas os arquivos mínimos compilados e reduzindo drasticamente o consumo de disco e memória da VPS.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Logs do Container
+Para monitorizar o funcionamento da aplicação:
+```bash
+docker compose logs -f
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📱 Google AdMob (app-ads.txt)
 
-To learn more about Next.js, take a look at the following resources:
+Para ativar a monetização do aplicativo e evitar avisos de receita em risco:
+1. Abra o arquivo [public/app-ads.txt](file:///./public/app-ads.txt).
+2. Substitua `pub-XXXXXXXXXXXXXXXX` pela sua ID de Editor da conta Google AdMob.
+3. O arquivo ficará acessível automaticamente na raiz do seu domínio em: `https://seu-dominio.com/app-ads.txt`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔍 SEO e Indexação
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **Sitemap Dinâmico:** Gerado automaticamente em `/sitemap.xml` através do arquivo [src/app/sitemap.ts](file:///./src/app/sitemap.ts).
+* **Robots.txt:** Configurado dinamicamente no arquivo [src/app/robots.ts](file:///./src/app/robots.ts) apontando para o sitemap.
+* **JSON-LD (Structured Data):** Configurado no [layout.tsx](file:///./src/app/layout.tsx) com as tags `SoftwareApplication` para que o Google exiba ricos detalhes do aplicativo (avaliações, preço) diretamente nos resultados de busca.

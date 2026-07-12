@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: exameteorico-landing
+    restart: always
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+    networks:
+      - traefik_public
+    labels:
+      # Habilitar Traefik para este serviço
+      - "traefik.enable=true"
+      
+      # Roteador HTTP (Porta 80) - Redireciona para HTTPS
+      - "traefik.http.routers.exameteorico-http.rule=Host(`exameteorico.co.mz`) || Host(`www.exameteorico.co.mz`)"
+      - "traefik.http.routers.exameteorico-http.entrypoints=web"
+      - "traefik.http.routers.exameteorico-http.middlewares=redirect-to-https"
+      
+      # Roteador HTTPS (Porta 443)
+      - "traefik.http.routers.exameteorico-secure.rule=Host(`exameteorico.co.mz`) || Host(`www.exameteorico.co.mz`)"
+      - "traefik.http.routers.exameteorico-secure.entrypoints=websecure"
+      - "traefik.http.routers.exameteorico-secure.tls=true"
+      - "traefik.http.routers.exameteorico-secure.tls.certresolver=letsencrypt"
+      
+      # Configuração de Porta interna do Container
+      - "traefik.http.services.exameteorico-svc.loadbalancer.server.port=3000"
+      
+      # Middleware de Redirecionamento HTTP -> HTTPS
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true"
+
+networks:
+  traefik_public:
+    external: true

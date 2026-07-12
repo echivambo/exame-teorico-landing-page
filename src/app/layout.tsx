@@ -19,6 +19,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  keywords: [
+    "Exame Teórico Moçambique 2026",
+    "Carta de Condução Moçambique",
+    "Simulados INATRO",
+    "Código de Estrada Moçambique",
+    "INATRO Moçambique",
+    "Estudar Condução Moçambique",
+    "Perguntas Exame de Condução",
+    "Exame Teórico de Condução",
+    "Aplicativo de Condução Moçambique",
+    "Exame Teórico Carta de Condução",
+    "Exame de Condução Moçambique"
+  ],
+  authors: [{ name: "Echivambo", url: "https://echivambo.co.mz" }],
   openGraph: {
     title: "Exame Teórico Moçambique 2026 | Simulados para Carta de Condução",
     description: "Estude onde e quando quiser com centenas de perguntas atualizadas, simulados completos e estatísticas de desempenho.",
@@ -54,10 +68,17 @@ export default function RootLayout({
     "name": "Exame Teórico Moçambique 2026",
     "operatingSystem": "Android",
     "applicationCategory": "EducationalApplication",
+    "description": "Prepare-se para o exame teórico de condução em Moçambique com centenas de perguntas, simulados completos e estatísticas de desempenho.",
+    "genre": "Driving Code, Código de Estrada",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "MZN"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Echivambo",
+      "url": "https://echivambo.co.mz"
     },
     "installUrl": "https://play.google.com/store/apps/details?id=com.echivambo.exameteorico",
     "aggregateRating": {
