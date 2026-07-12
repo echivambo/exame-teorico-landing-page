@@ -74,8 +74,8 @@ export default function FAQ() {
       answer: (
         <span>
           Pode falar connosco a qualquer altura enviando um e-mail para{" "}
-          <a href="mailto:suporte@echivambo.co.mz" className="text-primary hover:underline font-bold">
-            suporte@echivambo.co.mz
+          <a href="mailto:edsonchivambo@gmail.com" className="text-primary hover:underline font-bold">
+            edsonchivambo@gmail.com
           </a>{" "}
           ou preenchendo o formulário interativo de suporte na nossa página de{" "}
           <Link href="/contact" className="text-primary hover:underline font-bold">

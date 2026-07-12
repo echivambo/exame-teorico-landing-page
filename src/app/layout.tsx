@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "Exame Teórico Carta de Condução",
     "Exame de Condução Moçambique"
   ],
-  authors: [{ name: "Echivambo", url: "https://echivambo.co.mz" }],
+  authors: [{ name: "Edson Chivambo" }],
   openGraph: {
     title: "Exame Teórico Moçambique 2026 | Simulados para Carta de Condução",
     description: "Estude onde e quando quiser com centenas de perguntas atualizadas, simulados completos e estatísticas de desempenho.",
@@ -77,8 +77,7 @@ export default function RootLayout({
     },
     "author": {
       "@type": "Person",
-      "name": "Echivambo",
-      "url": "https://echivambo.co.mz"
+      "name": "Edson Chivambo"
     },
     "installUrl": "https://play.google.com/store/apps/details?id=com.echivambo.exameteorico",
     "aggregateRating": {

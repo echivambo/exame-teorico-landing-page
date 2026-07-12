@@ -93,20 +93,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="text-xs uppercase tracking-wider text-gray-400 font-bold leading-none">Email</h4>
-                      <a href="mailto:suporte@echivambo.co.mz" className="text-sm font-semibold hover:text-green-300 transition-colors mt-1 block">
-                        suporte@echivambo.co.mz
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-white/10 rounded-xl text-primary-light">
-                      <GlobeIcon className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-xs uppercase tracking-wider text-gray-400 font-bold leading-none">Website</h4>
-                      <a href="https://echivambo.co.mz" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold hover:text-green-300 transition-colors mt-1 block">
-                        echivambo.co.mz
+                      <a href="mailto:edsonchivambo@gmail.com" className="text-sm font-semibold hover:text-green-300 transition-colors mt-1 block">
+                        edsonchivambo@gmail.com
                       </a>
                     </div>
                   </div>

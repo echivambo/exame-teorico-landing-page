@@ -78,8 +78,8 @@ export default function PrivacyPage() {
                 <h2 className="text-xl font-bold text-brand-dark">7. Contacto</h2>
                 <p>
                   Se tiver qualquer dúvida ou sugestão sobre a nossa Política de Privacidade, não hesite em contactar-nos através do e-mail:{" "}
-                  <a href="mailto:suporte@echivambo.co.mz" className="text-primary hover:underline font-bold">
-                    suporte@echivambo.co.mz
+                  <a href="mailto:edsonchivambo@gmail.com" className="text-primary hover:underline font-bold">
+                    edsonchivambo@gmail.com
                   </a>.
                 </p>
               </section>

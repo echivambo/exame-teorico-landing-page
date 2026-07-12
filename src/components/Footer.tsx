@@ -83,21 +83,10 @@ export default function Footer() {
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-primary shrink-0" />
                 <a
-                  href="mailto:suporte@echivambo.co.mz"
+                  href="mailto:edsonchivambo@gmail.com"
                   className="hover:text-primary transition-colors duration-150 focus:outline-none"
                 >
-                  suporte@echivambo.co.mz
-                </a>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Globe className="w-4 h-4 text-primary shrink-0" />
-                <a
-                  href="https://echivambo.co.mz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors duration-150 focus:outline-none"
-                >
-                  Website do Desenvolvedor
+                  edsonchivambo@gmail.com
                 </a>
               </li>
             </ul>

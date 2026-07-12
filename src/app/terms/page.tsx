@@ -73,8 +73,8 @@ export default function TermsPage() {
                 <h2 className="text-xl font-bold text-brand-dark">6. Contacto e Dúvidas</h2>
                 <p>
                   Caso pretenda esclarecer qualquer questão relativa a estes Termos de Utilização, por favor envie uma mensagem para:{" "}
-                  <a href="mailto:suporte@echivambo.co.mz" className="text-primary hover:underline font-bold">
-                    suporte@echivambo.co.mz
+                  <a href="mailto:edsonchivambo@gmail.com" className="text-primary hover:underline font-bold">
+                    edsonchivambo@gmail.com
                   </a>.
                 </p>
               </section>
