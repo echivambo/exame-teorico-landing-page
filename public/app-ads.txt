@@ -1,3 +1,1 @@
-# Google AdMob app-ads.txt
-# Substitua o pub-XXXXXXXXXXXXXXXX pelo seu ID de Editor do Google AdMob
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-6479309721773554, DIRECT, f08c47fec0942fa0
