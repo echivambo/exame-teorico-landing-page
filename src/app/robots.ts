@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://exameteorico.co.mz/sitemap.xml",
+    sitemap: "https://eteorico.automatizamoz.tech/sitemap.xml",
   };
 }

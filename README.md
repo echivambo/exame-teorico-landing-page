@@ -50,10 +50,10 @@ A aplicação está configurada para deploy simplificado em produção usando **
 ### Requisitos no Servidor (VPS)
 * Docker e Docker Compose instalados.
 * Um serviço Traefik ativo escutando na rede Docker externa chamada `traefik_public`.
-* Apontamentos DNS (tipo A) para o seu domínio (ex: `exameteorico.co.mz` e `www.exameteorico.co.mz`) direcionados para o IP da VPS.
+* Apontamentos DNS (tipo A) para o seu domínio (ex: `eteorico.automatizamoz.tech`) direcionados para o IP da VPS.
 
 ### Configuração Inicial
-1. Abra o arquivo [docker-compose.yml](file:///./docker-compose.yml) e substitua `exameteorico.co.mz` e `www.exameteorico.co.mz` pelo seu domínio real.
+1. O arquivo [docker-compose.yml](file:///./docker-compose.yml) já está pré-configurado para o domínio `eteorico.automatizamoz.tech`.
 2. Certifique-se de que o certificado SSL resolver do Traefik se chama `letsencrypt` (ou edite o campo `tls.certresolver` no compose caso utilize outro nome).
 
 ### Comandos de Deploy

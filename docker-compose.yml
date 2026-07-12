@@ -18,12 +18,12 @@ services:
       - "traefik.enable=true"
       
       # Roteador HTTP (Porta 80) - Redireciona para HTTPS
-      - "traefik.http.routers.exameteorico-http.rule=Host(`exameteorico.co.mz`) || Host(`www.exameteorico.co.mz`)"
+      - "traefik.http.routers.exameteorico-http.rule=Host(`eteorico.automatizamoz.tech`)"
       - "traefik.http.routers.exameteorico-http.entrypoints=web"
       - "traefik.http.routers.exameteorico-http.middlewares=redirect-to-https"
       
       # Roteador HTTPS (Porta 443)
-      - "traefik.http.routers.exameteorico-secure.rule=Host(`exameteorico.co.mz`) || Host(`www.exameteorico.co.mz`)"
+      - "traefik.http.routers.exameteorico-secure.rule=Host(`eteorico.automatizamoz.tech`)"
       - "traefik.http.routers.exameteorico-secure.entrypoints=websecure"
       - "traefik.http.routers.exameteorico-secure.tls=true"
       - "traefik.http.routers.exameteorico-secure.tls.certresolver=letsencrypt"

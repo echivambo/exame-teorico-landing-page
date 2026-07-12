@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Exame Teórico Moçambique 2026 | Simulados para Carta de Condução",
   description: "Prepare-se para o exame teórico de condução em Moçambique com centenas de perguntas, simulados completos e estatísticas de desempenho.",
-  metadataBase: new URL("https://exameteorico.co.mz"),
+  metadataBase: new URL("https://eteorico.automatizamoz.tech"),
   alternates: {
     canonical: "/",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Exame Teórico Moçambique 2026 | Simulados para Carta de Condução",
     description: "Estude onde e quando quiser com centenas de perguntas atualizadas, simulados completos e estatísticas de desempenho.",
-    url: "https://exameteorico.co.mz",
+    url: "https://eteorico.automatizamoz.tech",
     siteName: "Exame Teórico Moçambique 2026",
     images: [
       {
