@@ -109,10 +109,10 @@ export default function ExamGuide() {
                     </div>
                   </li>
                   <li className="flex items-start gap-3 bg-brand-bg p-4 rounded-xl border border-gray-100">
-                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs mt-0.5">30</span>
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs mt-0.5">60</span>
                     <div>
-                      <h4 className="font-bold text-brand-dark text-sm sm:text-base">Minutos de Duração</h4>
-                      <p className="text-xs sm:text-sm text-gray-500 mt-1">O tempo limite para concluir e submeter a prova inteira é de trinta minutos, o que exige foco e atenção.</p>
+                      <h4 className="font-bold text-brand-dark text-sm sm:text-base">Duração da Prova</h4>
+                      <p className="text-xs sm:text-sm text-gray-500 mt-1">O tempo limite oficial para concluir e submeter a prova completa é de 60 minutos (1 hora).</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3 bg-brand-bg p-4 rounded-xl border border-gray-100">
@@ -255,7 +255,7 @@ export default function ExamGuide() {
                       <strong>Atenção ao vocabulário rodoviário:</strong> Palavras como "deve", "pode", "obrigatoriamente", "salvo se", "exclusivamente" alteram totalmente o significado de uma regra. Leia cada alternativa até o fim, pois a resposta correta é sempre a mais precisa e completa.
                     </p>
                     <p>
-                      <strong>Gerencie o seu tempo:</strong> Com 30 minutos disponíveis, tem aproximadamente 72 segundos para cada questão. Se ficar preso numa pergunta muito confusa ou difícil, salte-a e passe para a seguinte. No final do teste, poderá voltar com mais calma para resolver as pendentes.
+                      <strong>Gerencie o seu tempo:</strong> Com 1 hora (60 minutos) de duração total, terá tempo suficiente para ler e analisar calmamente cada pergunta. Se ficar preso numa questão difícil, marque-a mentalmente, avance para as seguintes e regresse ao fim com calma.
                     </p>
                     <p>
                       <strong>Cuidado com o nervosismo:</strong> A maioria das pessoas erra perguntas fáceis por pressa ou ansiedade. Respire fundo, relaxe os ombros e lembre-se de que os simulados que fez na nossa aplicação treinaram-no exatamente para aquele formato de perguntas.
