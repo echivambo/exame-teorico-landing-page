@@ -13,7 +13,7 @@ export default function Header() {
     { label: "Funcionalidades", href: "/#benefits" },
     { label: "Como Funciona", href: "/#how-it-works" },
     { label: "Perguntas Frequentes", href: "/#faq" },
-    { label: "Contacto", href: "/contact" },
+    { label: "Contacto", href: "/contacto" },
   ];
 
   const playStoreUrl = "https://play.google.com/store/apps/details?id=com.echivambo.exameteorico";

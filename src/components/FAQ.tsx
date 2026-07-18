@@ -66,6 +66,14 @@ export default function FAQ() {
       answer: "Sim, o nosso banco de dados de questões é regularmente atualizado para garantir total conformidade com o código de estrada em vigor e com as provas teóricas oficiais de Moçambique. Todas as novas placas de trânsito ou alterações nas leis são adicionadas rapidamente.",
     },
     {
+      question: "Como marcar o exame teórico no INATRO?",
+      answer: "Para marcar o seu exame teórico, deve dirigir-se a uma escola de condução licenciada ou diretamente a uma delegação do INATRO com a documentação necessária (documento de identificação válido, ficha de inscrição de candidato e o comprovativo de pagamento da taxa de exame aplicável). Geralmente, a própria escola de condução trata de todo o agendamento administrativo após a conclusão do número mínimo de aulas teóricas obrigatórias.",
+    },
+    {
+      question: "O que acontece se eu reprovar no exame de código?",
+      answer: "Se não atingir a nota mínima de 18 acertos, será considerado reprovado. De acordo com as normas do INATRO, terá de efetuar o pagamento de uma taxa de reexame e reagendar uma nova data para repetir a prova teórica. É por essa razão que treinar exaustivamente com simulados antes do dia oficial é o método mais eficaz para poupar tempo e dinheiro.",
+    },
+    {
       question: "O aplicativo é gratuito?",
       answer: "Sim! O descarregamento é gratuito e tem acesso imediato a centenas de simulados e questões de estudo sem pagar nada para começar a treinar.",
     },
@@ -75,10 +83,10 @@ export default function FAQ() {
         <span>
           Pode falar connosco a qualquer altura enviando um e-mail para{" "}
           <a href="mailto:edsonchivambo@gmail.com" className="text-primary hover:underline font-bold">
-            edsonchivambo@gmail.com
+             edsonchivambo@gmail.com
           </a>{" "}
           ou preenchendo o formulário interativo de suporte na nossa página de{" "}
-          <Link href="/contact" className="text-primary hover:underline font-bold">
+          <Link href="/contacto" className="text-primary hover:underline font-bold">
             Contacto
           </Link>
           .

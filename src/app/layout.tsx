@@ -13,14 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Exame Teórico Moçambique 2026 | Simulados para Carta de Condução",
-  description: "Prepare-se para o exame teórico de condução em Moçambique com centenas de perguntas, simulados completos e estatísticas de desempenho.",
+  title: "Exame Teórico de Condução em Moçambique | Simulados Gratuitos para Carta de Condução",
+  description: "Pratique gratuitamente o exame teórico de condução em Moçambique. Simulados completos, perguntas atualizadas e preparação para obter a carta de condução.",
   metadataBase: new URL("https://eteorico.automatizamoz.tech"),
   alternates: {
     canonical: "/",
   },
   keywords: [
     "Exame Teórico Moçambique 2026",
+    "Exame Teórico de Condução em Moçambique",
     "Carta de Condução Moçambique",
     "Simulados INATRO",
     "Código de Estrada Moçambique",
@@ -34,8 +35,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Edson Chivambo" }],
   openGraph: {
-    title: "Exame Teórico Moçambique 2026 | Simulados para Carta de Condução",
-    description: "Estude onde e quando quiser com centenas de perguntas atualizadas, simulados completos e estatísticas de desempenho.",
+    title: "Exame Teórico de Condução em Moçambique | Simulados Gratuitos para Carta de Condução",
+    description: "Pratique gratuitamente o exame teórico de condução em Moçambique. Simulados completos, perguntas atualizadas e preparação para obter a carta de condução.",
     url: "https://eteorico.automatizamoz.tech",
     siteName: "Exame Teórico Moçambique 2026",
     images: [
@@ -51,9 +52,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Exame Teórico Moçambique 2026",
-    description: "Prepare-se para o exame teórico de condução em Moçambique com simulados e estatísticas de desempenho.",
+    title: "Exame Teórico de Condução em Moçambique",
+    description: "Pratique gratuitamente o exame teórico de condução em Moçambique. Simulados completos, perguntas atualizadas e preparação para obter a carta de condução.",
     images: ["/logo.png"],
+  },
+  other: {
+    "geo.region": "MZ",
+    "geo.position": "-18.665695;35.529562",
+    "ICBM": "-18.665695, 35.529562",
   },
 };
 
@@ -89,7 +95,7 @@ export default function RootLayout({
 
   return (
     <html
-      lang="pt"
+      lang="pt-MZ"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
